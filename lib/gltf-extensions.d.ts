@@ -541,6 +541,20 @@ declare namespace Revelry {
 
             //Non-KHR
 
+            //EXT_texture_webp
+            interface extTextureWebP {}
+            interface EXTTextureWebP {}
+            interface ExtendableProperties {
+                EXTTextureWebP: EXTTextureWebP
+            }
+
+            interface texture {
+                EXT_texture_webp?: import('./extensions/EXT_texture_webp.js').extTextureWebP
+            }
+            interface Texture {
+                EXT_texture_webp?: import('./extensions/EXT_texture_basisu.js').EXT_texture_webp
+            }
+
             //REV_game_object
             interface revGameObjectNode {}
             interface REVGameObjectNode {}
